@@ -165,8 +165,35 @@ namespace ciklusok2
                     Console.WriteLine(szam55 + " * " + m + " = " + eredmeny);
                 }
             }
-        }
+            Console.WriteLine("----7.feladat-----");
 
+            Console.WriteLine("Adj meg 10 számot:");
+
+            for (int i = 0; i < 10; i++)
+            {
+                int szam66 = int.Parse(Console.ReadLine());
+
+                if (szam66 > 0)
+                    Console.WriteLine(szam66 + " pozitív");
+                else if (szam66 < 0)
+                    Console.WriteLine(szam66 + " negatív");
+                else
+                    Console.WriteLine(szam66 + " nulla");
+
+                if (szam66 % 2 == 0)
+                    Console.WriteLine(szam66 + " páros");
+                else
+                    Console.WriteLine(szam66 + " páratlan");
+
+                if (szam66 % 3 == 0)
+                    Console.WriteLine(szam66 + " osztható 3-mal");
+                else
+                    Console.WriteLine(szam66 + " nem osztható 3-mal");
+
+                Console.WriteLine();
+
+            }
+        }
     }
 }
 
