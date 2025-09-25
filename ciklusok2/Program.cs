@@ -90,14 +90,34 @@ namespace ciklusok2
             }
             for (int i = 0; i < parosak.Count; i++)
             {
-                Console.WriteLine(parosak[i]);
+
             }
             Console.WriteLine("Párosak" + " " + parosak.Count + "db");
             for (int i = 0; i < paratlanok.Count; i++)
             {
-                Console.WriteLine(paratlanok[i]);
+
             }
             Console.WriteLine("Páratlanok" + " " + paratlanok.Count + "db");
+
+            Console.WriteLine("--------------------------------4.feladat------------------------");
+            Console.WriteLine("Adj meg egy szót (a vége szó leállitja): ");
+            string szavak = Console.ReadLine();
+            int szamolo = 0;
+            if (szavak.Length > 5)
+            {
+                szamolo++;
+            }
+            while (szavak != "vége")
+            {
+                Console.WriteLine("Adj meg egy másikat: ");
+                szavak = Console.ReadLine();
+
+            if (szavak.Length > 5)
+                {
+                    szamolo++;
+                }
+            }
+            Console.WriteLine($"Ennyi 5 betűnél hosszabb szó van: {szamolo}");
         }
     }
 }
