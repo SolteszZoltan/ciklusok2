@@ -153,7 +153,7 @@ namespace ciklusok2
             for (int g = 0; g < osztalyzatok.Count; g++) ;
 
             Console.WriteLine("-----6.feladat-----");
-            Console.WriteLine("Adj meg egy számot 1 és 10 között:");
+            Console.WriteLine("Adj meg egy számot:");
             int szam55 = int.Parse(Console.ReadLine());
 
             for (int m = 1; m <= 10; m++)
@@ -193,6 +193,30 @@ namespace ciklusok2
                 Console.WriteLine();
 
             }
+
+            Console.WriteLine("----8.feladat----");
+            string j1, j2;
+
+            while (true)
+            {
+                Console.WriteLine("Jelszó 1:");
+                j1 = Console.ReadLine();
+
+                Console.WriteLine("Jelszó 2:");
+                j2 = Console.ReadLine();
+
+                if (j1 == j2)
+                    break;
+
+                Console.WriteLine("Nem egyeznek, próbáld újra.");
+            }
+
+            Console.WriteLine("Írj be egy szöveget:");
+            string sz = Console.ReadLine();
+
+            for (int i = sz.Length - 1; i >= 0; i--)
+                Console.Write(sz[i]);
+
         }
     }
 }
