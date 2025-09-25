@@ -27,7 +27,8 @@ namespace ciklusok2
                 Console.WriteLine($"A két szám között {szam3} szám van");
 
             }
-            else {
+            else
+            {
                 Console.WriteLine("A két szám egyenlő");
             }
 
@@ -52,7 +53,7 @@ namespace ciklusok2
 
             for (int i = 0; i < szamok.Count; i++)
             {
-                int mostaniSzam = szamok[i];  
+                int mostaniSzam = szamok[i];
                 int db = 0;
 
                 for (int j = 0; j < szamok.Count; j++)
@@ -70,6 +71,34 @@ namespace ciklusok2
                 }
             }
             Console.WriteLine("A legtöbbször megadott szám: " + legtobb);
+
+            Console.WriteLine("-------------------------------------------3.feladat----------------------------------------");
+
+            List<int> parosak = new List<int>();
+            List<int> paratlanok = new List<int>();
+
+            Console.WriteLine("Adj meg 10 számot:");
+
+            for (int i = 0; i < 10; i++)
+            {
+                int szam11 = int.Parse(Console.ReadLine());
+
+                if (szam11 % 2 == 0)
+                    parosak.Add(szam11);
+                else
+                    paratlanok.Add(szam11);
+            }
+            for (int i = 0; i < parosak.Count; i++)
+            {
+                Console.WriteLine(parosak[i]);
+            }
+            Console.WriteLine("Párosak" + " " + parosak.Count + "db");
+            for (int i = 0; i < paratlanok.Count; i++)
+            {
+                Console.WriteLine(paratlanok[i]);
+            }
+            Console.WriteLine("Páratlanok" + " " + paratlanok.Count + "db");
         }
     }
 }
+
