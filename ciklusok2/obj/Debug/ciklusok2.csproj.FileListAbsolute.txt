@@ -1,0 +1,7 @@
+C:\Users\solteszz\source\repos\ciklusok2\ciklusok2\bin\Debug\ciklusok2.exe.config
+C:\Users\solteszz\source\repos\ciklusok2\ciklusok2\bin\Debug\ciklusok2.exe
+C:\Users\solteszz\source\repos\ciklusok2\ciklusok2\bin\Debug\ciklusok2.pdb
+C:\Users\solteszz\source\repos\ciklusok2\ciklusok2\obj\Debug\ciklusok2.csproj.AssemblyReference.cache
+C:\Users\solteszz\source\repos\ciklusok2\ciklusok2\obj\Debug\ciklusok2.csproj.CoreCompileInputs.cache
+C:\Users\solteszz\source\repos\ciklusok2\ciklusok2\obj\Debug\ciklusok2.exe
+C:\Users\solteszz\source\repos\ciklusok2\ciklusok2\obj\Debug\ciklusok2.pdb
