@@ -112,7 +112,7 @@ namespace ciklusok2
                 Console.WriteLine("Adj meg egy másikat: ");
                 szavak = Console.ReadLine();
 
-            if (szavak.Length > 5)
+                if (szavak.Length > 5)
                 {
                     szamolo++;
                 }
@@ -120,9 +120,9 @@ namespace ciklusok2
             Console.WriteLine($"Ennyi 5 betűnél hosszabb szó van: {szamolo}");
 
             Console.WriteLine("------------5.feladat--------");
-            List<int>osztalyzatok = new List<int>();
+            List<int> osztalyzatok = new List<int>();
             Console.WriteLine("Add meg a jegyed 1-5 (-1 = kilépés): ");
-            int osztalyzat = int.Parse( Console.ReadLine() );
+            int osztalyzat = int.Parse(Console.ReadLine());
             if (osztalyzat == 0)
             {
                 Console.WriteLine("A 0 nem értelmezhető osztályzat");
@@ -131,9 +131,9 @@ namespace ciklusok2
             while (osztalyzat != -1)
             {
                 Console.WriteLine("Add meg a következő jegyet: ");
-                osztalyzat = int.Parse(Console.ReadLine() );
+                osztalyzat = int.Parse(Console.ReadLine());
                 osztalyzatok.Add(osztalyzat);
-               if (osztalyzat == 0)
+                if (osztalyzat == 0)
                 {
                     Console.WriteLine("A 0 nem értelmezhető osztályzat");
                 }
@@ -151,7 +151,22 @@ namespace ciklusok2
 
             }
             for (int g = 0; g < osztalyzatok.Count; g++) ;
+
+            Console.WriteLine("-----6.feladat-----");
+            Console.WriteLine("Adj meg egy számot 1 és 10 között:");
+            int szam55 = int.Parse(Console.ReadLine());
+
+            for (int m = 1; m <= 10; m++)
+            {
+                int eredmeny = szam55 * m;
+
+                if (eredmeny % 3 == 0)
+                {
+                    Console.WriteLine(szam55 + " * " + m + " = " + eredmeny);
+                }
+            }
         }
+
     }
 }
 
