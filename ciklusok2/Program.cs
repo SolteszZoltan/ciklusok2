@@ -118,6 +118,39 @@ namespace ciklusok2
                 }
             }
             Console.WriteLine($"Ennyi 5 betűnél hosszabb szó van: {szamolo}");
+
+            Console.WriteLine("------------5.feladat--------");
+            List<int>osztalyzatok = new List<int>();
+            Console.WriteLine("Add meg a jegyed 1-5 (-1 = kilépés): ");
+            int osztalyzat = int.Parse( Console.ReadLine() );
+            if (osztalyzat == 0)
+            {
+                Console.WriteLine("A 0 nem értelmezhető osztályzat");
+            }
+            osztalyzatok.Add(osztalyzat);
+            while (osztalyzat != -1)
+            {
+                Console.WriteLine("Add meg a következő jegyet: ");
+                osztalyzat = int.Parse(Console.ReadLine() );
+                osztalyzatok.Add(osztalyzat);
+               if (osztalyzat == 0)
+                {
+                    Console.WriteLine("A 0 nem értelmezhető osztályzat");
+                }
+                osztalyzatok.Add(osztalyzat);
+            }
+            int osztazatszamolo = 0;
+            for (int x = 0; x < osztalyzatok.Count; x++)
+            {
+                osztazatszamolo += osztalyzatok[x];
+            }
+            Console.WriteLine($"Az összeg: {osztazatszamolo}");
+            float szml = osztazatszamolo % osztalyzatok.Count;
+            Console.WriteLine(szml);
+            {
+
+            }
+            for (int g = 0; g < osztalyzatok.Count; g++) ;
         }
     }
 }
