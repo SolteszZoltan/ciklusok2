@@ -144,9 +144,8 @@ namespace ciklusok2
             {
                 osztazatszamolo += osztalyzatok[x];
             }
-            Console.WriteLine($"Az összeg: {osztazatszamolo}");
             float szml = osztazatszamolo % osztalyzatok.Count;
-            Console.WriteLine(szml);
+            Console.WriteLine("Az átlag:"+szml);
             {
 
             }
@@ -217,6 +216,35 @@ namespace ciklusok2
             for (int i = sz.Length - 1; i >= 0; i--)
                 Console.Write(sz[i]);
 
+            Console.WriteLine("------9.feladat------");
+            List<int> szamok2 = new List<int>();
+
+            int db2 = 0;
+
+            for (int i = 1; i <= 10; i++)
+            {
+                for (int j = 1; j <= 10; j++)
+                {
+                    if (i % j == 0)
+                    {
+                        db2++;
+                    }
+                }
+
+                if (db2 <= 2)
+                {
+                    szamok2.Add(i);
+                }
+
+                db2 = 0;
+            }
+
+            foreach (var item in szamok2)
+            {
+                Console.WriteLine(item);
+
+            }
+            Console.WriteLine($"{szamok2.Count} prím szám van.");
         }
     }
 }
